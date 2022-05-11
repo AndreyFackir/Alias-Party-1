@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 
 class ResultViewController: UIViewController {
+    var some = 0
     
     var soundManager = SoundManager()
     
