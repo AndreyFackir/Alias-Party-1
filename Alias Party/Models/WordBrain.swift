@@ -13,7 +13,6 @@ struct WordsBrain {
         }
     }
     
-    
     init(action: ActionEnum) {
         self.action = action
         words = Word.getWords(action: action)

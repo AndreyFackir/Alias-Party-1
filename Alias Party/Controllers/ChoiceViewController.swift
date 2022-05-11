@@ -8,6 +8,7 @@
 import UIKit
 
 class ChoiceViewController: UIViewController {
+    
     var soundManager = SoundManager()
     
     @IBOutlet var buttonChoiceCollection: [UIButton]!
@@ -31,7 +32,6 @@ class ChoiceViewController: UIViewController {
             default:
                 button.setTitle("Один", for: .normal)
             }
-            
         }
     }
     
@@ -49,7 +49,6 @@ class ChoiceViewController: UIViewController {
         print(choiceAction)
         performSegue(withIdentifier: "goToGameVC", sender: self)
     }
-    
 }
 
 //MARK: - Segue to Results

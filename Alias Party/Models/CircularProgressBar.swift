@@ -56,9 +56,4 @@ class CircularProgressBar: UIView {
         circularProgressAnimation.isRemovedOnCompletion = false
         progressLayer.add(circularProgressAnimation, forKey: "progressAnim")
     }
-    
-    
-    
-    
-    
 }

@@ -17,12 +17,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         continueButton.isHidden = true
     }
-
-    @IBAction func continuePressed(_ sender: UIButton) {
-        print(#function)
-        soundManager.playSound(soundName: "button")
-        
-    }
     
     @IBAction func newGamePressed(_ sender: UIButton) {
         print(#function)
@@ -33,8 +27,6 @@ class ViewController: UIViewController {
         print(#function)
         soundManager.playSound(soundName: "button")
     }
-    
-    
 }
 
 

@@ -29,22 +29,19 @@ struct JokeManager {
                     if let  text = self.parseJSON(jokeData: safeData), let punchline = self.parseJSON(jokeData: safeData) {
                         self.delegate?.didUpdateJoke(joke: text, punchline: punchline)
                     }
-                    
                 }
             }
             task.resume()
         }
-        
     }
     
     func parseJSON(jokeData: Data) -> JokeModel? {
         let decoder = JSONDecoder()
-        do{
+        do {
             let decodedData = try decoder.decode(JokeData.self, from: jokeData)
             let id = decodedData.id
             let joke = decodedData.setup
             let punchline = decodedData.punchline
-            
             let randomJoke = JokeModel(id: id, setup: joke, punchline: punchline)
             return randomJoke
         }
@@ -53,5 +50,4 @@ struct JokeManager {
             return nil
         }
     }
-    
 }

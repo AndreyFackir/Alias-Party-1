@@ -36,7 +36,6 @@ struct Word {
         case .four: return WordData.four
         }
     }
-    
 }
 
 
