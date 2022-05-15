@@ -60,7 +60,6 @@ extension ResultViewController: JokeManagerDelegate {
                 self.soundManager.playSound(soundName: "jokeDrum1")
                 
             }
-            
         }
     }
 }
